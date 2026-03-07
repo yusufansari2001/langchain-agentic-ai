@@ -1,0 +1,21 @@
+# Environment variables
+.env
+
+# Python virtual environments
+.venv
+venv
+
+# Python cache
+__pycache__/
+*.pyc
+
+# macOS files
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Python build files
+dist/
+build/
+*.egg-info/
