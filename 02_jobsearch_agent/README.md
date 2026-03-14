@@ -130,15 +130,38 @@ Find 3 AI engineer jobs using LangChain in the Bay Area
 
 # Example Output
 
-```
-Here are three AI Engineer jobs in the Bay Area:
+The agent analyzes the search results and generates a summarized response that may include:
 
-1. AI Engineer – LangChain – San Francisco
-2. AI Engineer – Hiya – San Francisco
-3. AI Engineer – Ironclad – San Francisco
+- Job title  
+- Company name  
+- Location  
+- Estimated salary (if available)  
+- A brief description of the role  
+- Links to the job postings  
+
+Example output:
+
+```
+Here are three AI Engineer jobs related to LangChain in the Bay Area:
+
+1. AI Engineer — LangChain
+   Location: San Francisco, CA
+   Salary: $160,000 – $180,000
+   Description: Work on building AI agents and developer tools using LangChain and LLM technologies.
+   Link: https://www.thehomebase.ai/jobs/ai-engineer-at-langchain
+
+2. AI Engineer — Hiya
+   Location: San Francisco, CA
+   Description: Develop AI-powered applications and integrate LLM-based solutions into production systems.
+   Link: https://www.builtinsf.com/job/ai-engineer/7415764
+
+3. AI Engineer — Ironclad
+   Location: San Francisco Bay Area
+   Description: Work on NLP systems and LLM integrations to enhance AI-driven legal platforms.
+   Link: https://www.aijobs.com/jobs/243284244-ai-engineer
 ```
 
-The agent may call the search tool **multiple times** to refine the results before generating the final answer.
+The agent may call the **search tool multiple times** to gather additional information before generating the final response.
 
 ---
 
