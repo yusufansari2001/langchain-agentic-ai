@@ -1,12 +1,24 @@
 from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
 from langchain_groq import ChatGroq
+import os
 
-load_dotenv()
+# Force load .env and override any existing environment variables
+load_dotenv(override=True)
+
+# Debug: show whether variables are loaded
+print("Groq:", os.getenv("GROQ_API_KEY"))
+print("Tracing:", os.getenv("LANGCHAIN_TRACING_V2"))
+print("Project:", os.getenv("LANGCHAIN_PROJECT"))
+
+# Debug: print all LangChain-related env vars
+for key, value in os.environ.items():
+    if "LANGCHAIN" in key:
+        print(f"{key} = {value}")
 
 
 def main():
-    print("Hello from langchain basic chain!")
+    print("\nHello from langchain basic chain!")
 
     information = """
     Elon Musk is a technology entrepreneur known for founding SpaceX
@@ -41,3 +53,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
