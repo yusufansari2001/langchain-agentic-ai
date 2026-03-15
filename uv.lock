@@ -526,6 +526,7 @@ dependencies = [
     { name = "langchain" },
     { name = "langchain-community" },
     { name = "langchain-groq" },
+    { name = "langsmith" },
     { name = "python-dotenv" },
 ]
 
@@ -536,6 +537,7 @@ requires-dist = [
     { name = "langchain", specifier = ">=1.2.10" },
     { name = "langchain-community", specifier = ">=0.4.1" },
     { name = "langchain-groq", specifier = ">=1.1.2" },
+    { name = "langsmith", specifier = ">=0.7.14" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
 ]
 
